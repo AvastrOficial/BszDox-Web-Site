@@ -1,0 +1,134 @@
+                .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 40% 45% 0 0;
+            border: 1px solid #333;
+           z-index: 201;  
+        }
+
+        .menu-item, .menu-item2 {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+        }
+
+        .circle, .circle2, .circle3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+            border: 2px solid #333;
+            font-size: 24px;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .circle:hover, .circle2:hover, .circle3:hover {
+            transform: scale(1.1);
+            background-color: #bbb;
+        }
+
+        .circle2 {
+            position: relative;
+            top: -20px;
+        }
+
+        .circle3 {
+            position: relative;
+            top: -30px;
+        }
+
+        .plus {
+            position: relative;
+        }
+
+      
+        .plus span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .menu-item span, .menu-item2 span {
+            font-size: 20px; /* Aumenta el tamaño de la fuente */
+            font-weight: bold; /* Hace el texto más grueso */
+            color: #333; /* Color del texto */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+            margin-top: 5px; /* Espacio entre el icono y el texto */
+            text-align: center; /* Centra el texto dentro del contenedor */
+        }
+    
+    
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    .post-container {
+      border: 2px solid #e50914;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+      max-width: 800px;
+      margin: auto;
+    }
+    .post-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e50914;
+      margin: 0 0 10px 0;
+       overflow-wrap: break-word; /* Para romper palabras largas */
+       word-wrap: break-word;     /* Compatibilidad con navegadores */
+       overflow: hidden;   
+    }
+   .post-text {
+      font-size: 16px;
+      white-space: pre-wrap;
+      margin-bottom: 15px;
+      overflow-wrap: break-word; /* Para romper palabras largas */
+      word-wrap: break-word;     /* Compatibilidad con navegadores */
+      overflow: hidden;          /* Evita que el texto se salga */
+    }
+    /* Estilo para links detectados */
+    .post-text a {
+      color: #e50914;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    #post-author {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    #share-btn {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #share-btn:hover {
+      background-color: #b0060e;
+    }
